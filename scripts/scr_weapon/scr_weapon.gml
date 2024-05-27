@@ -73,6 +73,7 @@ global.weapons={
       "master_crafted": 35,
       "artifact": 40
     },
+    "tags":["Shield"]
   },
   "Boarding Shield": {
     "description":"Protects twice as well when boarding. Used in siege or boarding operations, this shield offers additional protection.  It may be used with a 2-handed ranged weapon.",    
@@ -88,7 +89,8 @@ global.weapons={
       "standard": 15,
       "master_crafted": 17.5,
       "artifact": 20
-    },        
+    },       
+    "tags":["Shield"]
   },
   "Hellgun": {
     "abbreviation": "HllGun",
@@ -168,6 +170,7 @@ global.weapons={
         "range": 1,
         "spli": 2,
         "arp": 0
+        "tags":["sword"],
     },
     "Chainsword": {
         "abbreviation": "ChSwrd",
@@ -294,17 +297,17 @@ global.weapons={
     "Chainfist": {
      "abbreviation": "ChFst",
         "attack": {
-            "standard": 300,
-            "master_crafted": 325,
-            "artifact": 350
+            "standard": 550,
+            "master_crafted": 600,
+            "artifact": 700
         },
         "description": "Created by mounting a chainsword to a power fist, this weapon is easily able to carve through armoured bulkheads.",
         "melee_hands": 1.25,
         "ranged_hands": 1,
         "range": 1,
-        "spli": 1,
+        "spli": 2,
         "arp": 1,
-        "tags":["power", "chain", "fist", "siege"],
+        "tags":["power", "chain", "fist", "dual, "siege"],
     },
     "Lascutter": {
        "abbreviation": "Lasct",
@@ -423,14 +426,14 @@ global.weapons={
         "range": 1,
         "spli": 2,
         "arp": 1,
-        "tags":["power","fist"],
+        "tags":["power","dual","fist"],
     },
     "Lightning Claw": {
     "abbreviation": "LghtClw",             
         "attack": {
-            "standard": 130,
-            "master_crafted": 160,
-            "artifact": 190
+            "standard": 450,
+            "master_crafted": 500,
+            "artifact": 600
         },
         "description": "Lightning claws are specialized close combat weapons with built-in disruptor fields. These lethal claws rip into infantry like butter, bringing terror to the foe.",
         "melee_hands": 1.1,
@@ -693,7 +696,7 @@ global.weapons={
         "range": 1,
         "spli": 10,
         "arp": 1,
-        "tags":["dreadnought"]  
+        "tags":["dreadnought", "power"]  
     },
     "Close Combat Weapon":{
         "abbreviation": "CCW",               
@@ -835,7 +838,7 @@ global.weapons={
         "range": 18,
         "spli": 1,
         "arp": 0,
-        "tags":["precision"]
+        "tags":["precision", "rifle"]
     },
     "Assault Cannon": {
         "abbreviation": "AssCann",       
@@ -899,7 +902,7 @@ global.weapons={
         "range": 24,
         "spli": 1,
         "arp": 1,
-         "tags":["heavy_ranged"]
+         "tags":["heavy_ranged", "las"]
     },
     "Conversion Beam Projector": {
         "abbreviation": "CnvBmPrj",            
@@ -915,6 +918,7 @@ global.weapons={
         "range": 20,
         "spli": 3,
         "arp": 1
+         "tags":["heavy_ranged", "ancient"]
     },
     "Integrated Bolters": {
         "abbreviation": "IntgBltr", 
@@ -952,7 +956,7 @@ global.weapons={
         "spli": 3,
         "arp": 1,
         "second_profiles":["Integrated Bolters"],
-        "tags":["power","fist"],
+        "tags":["power", "fist"],
     },    
     "Power Fists": {
         "abbreviation": "PwrFists", 
@@ -983,7 +987,7 @@ global.weapons={
         "range": 16,
         "spli": 8,
         "arp": 1,
-        "tags":["heavy_ranged","vehicle","dreadnought"]
+        "tags":["bolt", "heavy_ranged", "vehicle", "dreadnought"]
     },
     "Twin Linked Lascannon": {
         "abbreviation": "TwnLascnn", 
@@ -999,7 +1003,7 @@ global.weapons={
         "range": 20,
         "spli": 2,
         "arp": 1,
-        "tags":["heavy_ranged","vehicle","dreadnought"]
+        "tags":["heavy_ranged", "las", "vehicle", "dreadnought"]
     },
     "Lascannons": {
          "abbreviation": "DblLascnn", 
@@ -1015,7 +1019,7 @@ global.weapons={
         "range": 20,
         "spli": 2,
         "arp": 1,
-        "tags":["heavy_ranged","vehicle","dreadnought"]
+        "tags":["heavy_ranged", "las", "vehicle", "dreadnought"]
     },
     "Heavy Bolter": {
         "abbreviation": "HvyBltr", 
@@ -1031,7 +1035,7 @@ global.weapons={
         "range": 16,
         "spli": 6,
         "arp": 1,
-        "tags":["heavy_ranged"]
+        "tags":["bolt", "heavy_ranged"]
     },
     "Whirlwind Missiles": {
         "attack": {
@@ -1047,10 +1051,12 @@ global.weapons={
         "range": 20,
         "spli": 25,
         "arp": 1
+        "tags":["vehicle", "indirect"]
     },
     "HK Missile": {
         "abbreviation": "HKMssl", 
         "description": "",
+        "tags":["HK"]
     },  
     "Twin Linked Heavy Bolter Mount": {
         "attack": {
@@ -1065,7 +1071,8 @@ global.weapons={
         "ammo": 20,
         "range": 16,
         "spli": 3,
-        "arp": 0
+        "arp": 1
+        "tags":["vehicle", "dreadnought", "heavy_ranged", "bolt"]
     },
     "Twin Linked Lascannon Mount": {
         "attack": {
@@ -1176,7 +1183,7 @@ global.weapons={
         "range": 12,
         "spli": 3,
         "arp": 0,
-        "tags":["bolt", "vehicle","sponson"]
+        "tags":["bolt", "vehicle", "sponson"]
     },
     "Flamestorm Cannon Sponsons": {
         "attack": {
@@ -1192,7 +1199,7 @@ global.weapons={
         "range": 3,
         "spli": 3,
         "arp": 1,
-        "tags":["flame", "vehicle","sponson"]
+        "tags":["flame", "vehicle", "sponson"]
     },
     "Twin Linked Heavy Flamer Sponsons": {
         "attack": {
@@ -1208,7 +1215,7 @@ global.weapons={
         "range": 2.1,
         "spli": 3,
         "arp": -1,
-        "tags":["flame", "vehicle","sponson"]
+        "tags":["flame", "vehicle", "sponson", "dreadnought"]
     },
 "Twin Linked Bolters": {
         "attack": {
@@ -1223,6 +1230,7 @@ global.weapons={
         "ammo": 30,
         "range": 12,
         "spli": 6,
+        "tags":["bolt", "vehicle"]
     },        
     "Twin Linked Multi-Melta Sponsons": {
         "abbreviation": "TwnMltMelts", 
